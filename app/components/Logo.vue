@@ -1,7 +1,11 @@
 <template>
-  <NuxtLink to="/">
-    <h2 class="text-2xl font-semibold">
-      Laravel <span class="text-primary">Nuxt</span>
-    </h2>
-  </NuxtLink>
+  <UUser
+    name="Haritina Jiovanny"
+    description="Développeur Fullstack"
+    size="lg"
+    :avatar="{
+      src: '/images/avatar_2025.png',
+      icon: 'ri-user-line',
+    }"
+  />
 </template>
