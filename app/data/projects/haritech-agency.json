@@ -1,0 +1,19 @@
+{
+  "name": "Haritech Agency",
+  "context": "Haritech Agency est une plateforme conçue pour une agence digitale spécialisée dans le développement web et mobile.\n\nL’objectif était de créer un site vitrine interactif permettant à l’agence de présenter ses services, ses projets et de faciliter le contact avec de nouveaux clients.\n\nLe projet reflète l’identité de l’agence et sert de point d’entrée vers son écosystème numérique.",
+  "problem": "Avant le projet, l’agence n’avait pas de présence digitale claire et moderne.\n\nLes clients potentiels avaient du mal à comprendre rapidement les services proposés ou à voir les projets réalisés.\n\nCela limitait la capacité de l’agence à attirer de nouveaux clients et à démontrer son expertise sur le marché.",
+  "solution": "La plateforme Haritech Agency permet de présenter l’agence, ses services et ses projets de manière claire et attractive.\n\nLes visiteurs peuvent découvrir les différentes offres, visualiser des cas concrets et entrer facilement en contact avec l’équipe.\n\nL’interface met l’accent sur l’expérience utilisateur et reflète la qualité et le professionnalisme de l’agence.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "Le backend Laravel gère le contenu dynamique, les projets de l’agence et les demandes de contact.\n\nLe frontend Vue.js avec Vuetify fournit une interface moderne, responsive et interactive.\n\nL’architecture modulaire permet d’ajouter facilement de nouvelles sections ou projets à l’avenir."
+  },
+  "technicalChallenges": [
+    "Créer une interface attractive et responsive capable de refléter l’identité de l’agence.",
+    "Mettre en place un système de gestion de contenu flexible pour les projets et services de l’agence.",
+    "Optimiser la navigation pour que les visiteurs trouvent rapidement les informations recherchées.",
+    "Assurer que la plateforme puisse évoluer facilement pour intégrer de nouvelles fonctionnalités ou sections."
+  ],
+  "result": "Haritech Agency dispose désormais d’une présence digitale moderne et professionnelle.\n\nLa plateforme centralise la présentation des services et projets, facilitant la prise de contact avec de nouveaux clients.\n\nElle met en valeur l’expertise de l’agence tout en offrant une expérience utilisateur fluide et intuitive.",
+  "image": null,
+  "link": "https://haritechagency.com/"
+}

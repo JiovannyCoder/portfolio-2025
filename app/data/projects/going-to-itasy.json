@@ -1,0 +1,19 @@
+{
+  "name": "Going to Itasy",
+  "context": "Going to Itasy est un projet personnel que j’ai conçu avec l’objectif de promouvoir le tourisme dans la région d’Itasy à Madagascar.\n\nCette région possède un fort potentiel touristique grâce à ses paysages, ses lacs et ses activités culturelles, mais elle reste encore peu connue et peu valorisée sur internet.\n\nL’idée du projet était donc de créer une plateforme capable de centraliser les informations touristiques et d’aider les visiteurs à préparer facilement leur séjour.",
+  "problem": "L’une des principales difficultés pour les touristes intéressés par la région d’Itasy est le manque d’informations accessibles et fiables.\n\nLes hôtels, les activités et les lieux touristiques sont souvent mal référencés ou dispersés sur différentes sources.\n\nLes visiteurs ont donc du mal à planifier leur séjour, à estimer leur budget ou à découvrir les meilleures options disponibles.\n\nCe manque de visibilité impacte également les acteurs locaux comme les hôtels qui ont peu d’outils pour promouvoir leurs services.",
+  "solution": "Going to Itasy propose une plateforme qui centralise les informations touristiques de la région.\n\nLes visiteurs peuvent découvrir les hôtels disponibles, consulter les tarifs, rechercher des établissements selon différents critères et obtenir des informations utiles pour organiser leur voyage.\n\nLa plateforme permet également aux hôtels de gérer leurs chambres, leurs tarifications et de rester en contact avec les visiteurs intéressés.\n\nUne fonctionnalité basée sur l’intelligence artificielle permet aussi d’estimer le budget d’un séjour afin d’aider les touristes à mieux préparer leur voyage.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "L’application repose sur une architecture API avec Laravel pour le backend et Vue.js pour l’interface utilisateur.\n\nLe backend gère les entités principales telles que les hôtels, les chambres, les visiteurs et les abonnements, ainsi que la logique métier liée aux notifications et aux tarifications.\n\nLe frontend fournit une interface interactive permettant aux utilisateurs de rechercher des hôtels, explorer les informations touristiques et planifier leur séjour.\n\nLa plateforme est conçue de manière modulaire afin de pouvoir ajouter facilement de nouvelles fonctionnalités liées au tourisme local."
+  },
+  "technicalChallenges": [
+    "Modéliser un système flexible pour gérer les hôtels, les chambres et leurs différentes tarifications.",
+    "Mettre en place une recherche avancée permettant aux visiteurs de filtrer efficacement les hôtels selon plusieurs critères.",
+    "Créer un système de notification pour informer les hôtels des nouveaux visiteurs intéressés par leurs services.",
+    "Intégrer un module d’intelligence artificielle capable d’estimer le budget d’un séjour touristique."
+  ],
+  "result": "Going to Itasy constitue une plateforme visant à améliorer la visibilité touristique de la région.\n\nLe projet permet de centraliser les informations essentielles pour les visiteurs tout en offrant aux hôtels un outil pour présenter leurs services.\n\nEn facilitant la découverte et la planification des séjours, la plateforme contribue à valoriser le potentiel touristique d’Itasy et à soutenir le développement du tourisme local.",
+  "image": null,
+  "link": null
+}

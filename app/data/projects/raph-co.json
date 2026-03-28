@@ -1,0 +1,19 @@
+{
+  "name": "Raph and Co",
+  "context": "Raph and Co est un projet réalisé au sein de l’entreprise du même nom.\n\nL’objectif était de créer une plateforme digitale permettant de présenter l’entreprise, ses activités et ses services tout en servant de point d’entrée pour les utilisateurs intéressés par son écosystème.\n\nL’entreprise souhaitait moderniser sa présence en ligne et disposer d’un site capable de refléter son identité, ses valeurs et son professionnalisme.",
+  "problem": "Avant ce projet, la visibilité digitale de l’entreprise était limitée.\n\nLes informations concernant les services, les projets ou les opportunités n’étaient pas centralisées dans une plateforme claire et accessible.\n\nLes visiteurs avaient donc peu de moyens de comprendre rapidement ce que proposait réellement l’entreprise ou comment entrer en contact avec elle.\n\nCela limitait la crédibilité en ligne et la capacité de l’entreprise à attirer de nouveaux partenaires, clients ou talents.",
+  "solution": "La solution a été de concevoir une plateforme web moderne permettant de présenter clairement l’entreprise, ses activités et ses projets.\n\nLe site sert à la fois de vitrine institutionnelle et de point d’accès vers les différentes initiatives développées par l’entreprise, notamment ses plateformes numériques.\n\nL’interface met en avant les services, les projets réalisés et facilite la prise de contact avec l’entreprise.\n\nL’objectif était de construire une présence digitale professionnelle, claire et évolutive.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "Le projet est construit autour d’une architecture API avec Laravel pour la gestion du backend et Vue.js pour l’interface utilisateur.\n\nLe backend gère le contenu dynamique du site, la gestion des informations de l’entreprise et les interactions des utilisateurs.\n\nLe frontend fournit une interface moderne et responsive permettant de présenter les services, les projets et les informations de manière claire et attractive.\n\nCette architecture permet également d’ajouter facilement de nouvelles sections ou fonctionnalités dans le futur."
+  },
+  "technicalChallenges": [
+    "Concevoir une structure de contenu flexible permettant de gérer les différentes informations de l’entreprise (services, projets, présentation).",
+    "Créer une interface claire et professionnelle capable de refléter l’image de l’entreprise.",
+    "Mettre en place une architecture évolutive permettant d’ajouter facilement de nouvelles sections ou plateformes liées à l’entreprise.",
+    "Optimiser l’expérience utilisateur afin de rendre la navigation simple et intuitive pour les visiteurs."
+  ],
+  "result": "Le projet Raph and Co a permis de doter l’entreprise d’une présence digitale moderne et professionnelle.\n\nLa plateforme centralise désormais les informations essentielles concernant l’entreprise, ses activités et ses projets.\n\nElle sert également de porte d’entrée vers l’écosystème numérique développé par l’entreprise, tout en améliorant sa visibilité et sa crédibilité en ligne.",
+  "image": null,
+  "link": "https://www.raph-co.com/"
+}

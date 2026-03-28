@@ -1,0 +1,19 @@
+{
+  "name": "PMPD",
+  "context": "PMPD est un projet développé pour répondre aux besoins de gestion et de suivi des projets au sein d’une organisation.\n\nL’objectif était de fournir une plateforme centralisée permettant aux équipes de planifier, suivre et collaborer efficacement sur leurs projets.\n\nLe projet est né du constat que les méthodes traditionnelles, souvent basées sur des tableurs ou des emails, étaient inefficaces et sources d’erreurs.",
+  "problem": "La gestion des projets était dispersée et peu structurée.\n\nLes équipes rencontraient des difficultés à suivre l’avancement des tâches, à respecter les délais et à communiquer efficacement.\n\nCette absence d’outil centralisé entraînait des retards, des confusions et une visibilité limitée pour les managers.",
+  "solution": "PMPD propose une plateforme web qui centralise la gestion de projets et le suivi des tâches.\n\nLes utilisateurs peuvent créer des projets, assigner des tâches, suivre leur progression et collaborer en temps réel.\n\nLe système fournit des tableaux de bord clairs pour les managers afin de visualiser l’état global des projets et identifier rapidement les points critiques.\n\nL’objectif était de simplifier la gestion tout en améliorant la transparence et l’efficacité des équipes.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "Le backend, développé avec Laravel, gère la logique métier, la gestion des projets, des tâches et des utilisateurs.\n\nLe frontend, construit avec Vue.js et Vuetify, fournit une interface intuitive pour créer, suivre et mettre à jour les projets.\n\nLa séparation frontend/backend permet d’assurer une bonne évolutivité et facilite l’ajout de nouvelles fonctionnalités."
+  },
+  "technicalChallenges": [
+    "Concevoir un modèle de données flexible pour gérer différents types de projets et tâches.",
+    "Mettre en place des notifications en temps réel pour assurer une collaboration efficace entre les membres de l’équipe.",
+    "Fournir des tableaux de bord clairs et dynamiques reflétant l’état des projets et des tâches.",
+    "Assurer la sécurité et la gestion des droits d’accès selon les rôles des utilisateurs."
+  ],
+  "result": "PMPD a permis d’améliorer considérablement la gestion et le suivi des projets.\n\nLes équipes disposent désormais d’un outil centralisé pour collaborer, suivre les tâches et respecter les délais.\n\nLe projet a augmenté la productivité et la transparence au sein de l’organisation.",
+  "image": null,
+  "link": null
+}

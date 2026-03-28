@@ -1,0 +1,19 @@
+{
+  "name": "Raph Emploi",
+  "context": "Raph Emploi est un projet que j’ai réalisé au sein de l’entreprise Raph and Co.\n\nL’objectif était de créer une plateforme numérique capable de centraliser les opportunités d’emploi et de simplifier les interactions entre recruteurs et candidats.\n\nL’entreprise souhaitait disposer d’un outil moderne permettant de digitaliser le processus de recrutement, souvent encore géré par email, fichiers Excel ou messages informels.",
+  "problem": "Le processus de recrutement était fragmenté et peu structuré.\n\nLes recruteurs avaient du mal à gérer les candidatures, suivre les profils et communiquer efficacement avec les candidats.\n\nDu côté des candidats, il était difficile de trouver des offres pertinentes, de suivre leurs candidatures ou de mettre en valeur leurs compétences.\n\nCette absence de centralisation entraînait une perte de temps, un manque de visibilité et une mauvaise expérience pour les deux parties.",
+  "solution": "Raph Emploi propose une plateforme complète reliant recruteurs, candidats, offres d’emploi et candidatures dans un seul écosystème.\n\nLes recruteurs peuvent publier des offres, gérer les candidatures reçues et suivre l’évolution du processus de recrutement.\n\nLes candidats peuvent créer un profil professionnel, postuler facilement aux offres et suivre l’état de leurs candidatures.\n\nL’objectif était de rendre le processus plus fluide, transparent et efficace pour tous les acteurs.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "L’application est construite avec une architecture backend API REST sous Laravel et un frontend SPA développé avec Vue.js.\n\nLe backend gère la logique métier, les relations entre les entités (offres, candidatures, utilisateurs) et les règles du processus de recrutement.\n\nLe frontend fournit une interface dynamique permettant aux utilisateurs d’interagir facilement avec la plateforme, notamment pour rechercher des offres, postuler ou gérer les candidatures.\n\nLa séparation claire entre API et interface permet une meilleure évolutivité et facilite l’ajout de nouvelles fonctionnalités."
+  },
+  "technicalChallenges": [
+    "Concevoir un modèle de données capable de gérer efficacement les relations entre recruteurs, offres d'emploi, candidatures et candidats.",
+    "Mettre en place un système de suivi des candidatures permettant aux recruteurs de visualiser rapidement l’état de chaque processus.",
+    "Optimiser la recherche et le filtrage des offres pour permettre aux candidats de trouver rapidement des opportunités pertinentes.",
+    "Assurer une expérience utilisateur fluide malgré la complexité des interactions entre les différentes entités du système."
+  ],
+  "result": "La plateforme Raph Emploi permet aujourd’hui de centraliser le processus de recrutement sur un seul outil.\n\nLes recruteurs peuvent publier et gérer leurs offres plus efficacement, tandis que les candidats disposent d’un espace clair pour suivre leurs candidatures et découvrir de nouvelles opportunités.\n\nLe projet a permis de structurer le recrutement au sein de l’écosystème de l’entreprise tout en offrant une expérience moderne et intuitive aux utilisateurs.",
+  "image": null,
+  "link": "https://www.raph-emploi.com"
+}

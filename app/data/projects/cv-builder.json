@@ -1,0 +1,19 @@
+{
+  "name": "CV Builder",
+  "context": "CV Builder est un projet que j’ai développé pour répondre à un besoin très fréquent chez les étudiants et les jeunes professionnels : créer rapidement un CV clair et professionnel.\n\nBeaucoup de personnes souhaitent postuler à des offres d’emploi mais ne savent pas toujours comment structurer leur CV ou utiliser des outils de design complexes.\n\nL’idée du projet était donc de proposer un outil simple et accessible permettant de générer un CV professionnel directement depuis une interface web.",
+  "problem": "Créer un CV professionnel peut être difficile pour de nombreux candidats.\n\nLes outils traditionnels comme les éditeurs de texte demandent souvent des compétences en mise en page pour obtenir un résultat propre et structuré.\n\nDe plus, modifier ou adapter un CV pour différentes candidatures peut rapidement devenir fastidieux.\n\nCette complexité peut ralentir les candidats dans leurs démarches de recherche d’emploi.",
+  "solution": "CV Builder propose une application web permettant de créer et générer un CV en quelques étapes simples.\n\nL’utilisateur remplit différentes sections comme les informations personnelles, les expériences professionnelles, les compétences ou la formation.\n\nL’application se charge ensuite de structurer automatiquement ces données dans un modèle de CV clair et professionnel.\n\nLe CV peut ensuite être exporté facilement pour être utilisé dans les candidatures.",
+  "architecture": {
+    "stacks": ["Vue.js", "Vuetify", "Laravel", "MySQL", "REST API"],
+    "structure": "L’application repose sur une architecture séparant le frontend et le backend.\n\nLe frontend, développé avec Vue.js et Vuetify, fournit une interface interactive permettant aux utilisateurs de saisir leurs informations et de prévisualiser leur CV en temps réel.\n\nLe backend, développé avec Laravel, gère la sauvegarde des données utilisateurs ainsi que la génération et l’export des CV.\n\nCette architecture permet d’ajouter facilement de nouveaux modèles de CV et de nouvelles fonctionnalités dans le futur."
+  },
+  "technicalChallenges": [
+    "Concevoir un système flexible capable de gérer différentes sections d’un CV (expériences, formations, compétences, etc.).",
+    "Mettre en place une prévisualisation dynamique permettant aux utilisateurs de voir leur CV se construire en temps réel.",
+    "Générer un document exportable tout en conservant une mise en page propre et professionnelle.",
+    "Assurer une interface simple et intuitive pour rendre l’outil accessible même aux utilisateurs non techniques."
+  ],
+  "result": "Le projet CV Builder permet aux utilisateurs de créer rapidement un CV structuré et professionnel sans avoir à gérer la mise en page eux-mêmes.\n\nL’outil simplifie la création et la modification des CV, ce qui permet aux candidats de se concentrer sur le contenu plutôt que sur la forme.\n\nIl constitue une solution pratique pour préparer efficacement des candidatures à des offres d’emploi.",
+  "image": null,
+  "link": "https://www.raph-emploi.com/creer-un-cv"
+}
