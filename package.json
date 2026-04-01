@@ -18,12 +18,14 @@
     "axios": "^1.13.1",
     "eslint": "^9.39.0",
     "nuxt": "^4.2.0",
-    "nuxt-auth-sanctum": "^1.4.2",
     "typescript": "^5.9.3",
     "vue": "^3.5.22",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.3",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@iconify-json/ri": "^1.2.6"
+    "@iconify-json/lucide": "^1.2.101",
+    "@iconify-json/ri": "^1.2.6",
+    "baseline-browser-mapping": "^2.10.13"
   }
 }

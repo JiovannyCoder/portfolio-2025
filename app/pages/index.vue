@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import type { ButtonProps, PageFeatureProps } from "@nuxt/ui";
+import experiences from "~/data/experiences/index.json";
+import testimonials from "~/data/testimonials/index.json";
 
 const links = ref<ButtonProps[]>([
   {
     label: "Me Contacter",
-    to: "/contact",
+    to: "/#contact",
   },
   {
     label: "Mes Projets",
@@ -59,13 +61,11 @@ const skills: PageFeatureProps[] = [
     icon: "ri-tools-line",
   },
 ];
-
-const { data: projects } = useFetch('/api/projects')
 </script>
 
 <template>
-  <UPage>
-    <UPageHero title="Code propre. Solutions fiables. Amélioration continue." headline="Mon approche"
+  <UPage class="scroll-smooth">
+    <UPageHero id="hero" title="Code propre. Solutions fiables. Amélioration continue." headline="Mon approche"
       description="Développeur fullstack spécialisé en Laravel, Vue.js et Nuxt, je combine curiosité et rigueur pour transformer des idées en applications robustes et intuitives. J’aime explorer de nouvelles solutions, optimiser le code et créer des expériences web qui tiennent sur le long terme."
       :links="links">
       <UMarquee>
@@ -76,48 +76,38 @@ const { data: projects } = useFetch('/api/projects')
         <img src="/images/logos/tailwind.png" alt="Logo Tailwind CSS" width="120" />
       </UMarquee>
     </UPageHero>
-    <UPageSection class="border-y border-muted" title="Compétences" headline="Ce que je maîtrise"
+    <UPageSection id="competences" class="border-y border-muted" title="Compétences" headline="Ce que je maîtrise"
       description="Un ensemble de compétences techniques et méthodologiques qui me permettent de créer des applications fiables, maintenables et pensées pour évoluer."
       :features="skills"></UPageSection>
-    <UPageSection title="Projets sélectionnés" headline="Ce que j’ai construit"
-      description="Une collection de solutions concrètes où j’ai appliqué ma rigueur technique et ma recherche de simplicité. Chaque projet reflète ma manière d’aborder les défis : comprendre le besoin, structurer proprement la logique et livrer des interfaces intuitives et fiables.">
-      <template v-for="project in projects" :key="project.name">
-        <UPageCTA :ui="{
-          container: 'lg:py-0 lg:px-0 px-0!'
-        }" :links="[
-          {
-            label: 'Voir plus',
-            trailingIcon: 'lucide-arrow-right',
-            to: `/projets/${project.slug}`
-          }
-        ]" :title="project.name" :description="project.excerpt" orientation="horizontal" reverse variant="naked">
-          <template #body>
-            <div>
-              <div class="flex gap-2 flex-wrap">
-                <UBadge color="neutral" v-for="stack in project.stacks" :key="stack" variant="outline" :label="stack">
-                </UBadge>
-              </div>
-              <UAccordion class="mt-4" :ui="{
-                label: 'text-base md:text-lg',
-                body: 'text-base md:text-lg text-muted'
-              }" :items="[
-                {
-                  label: 'Problème posé',
-                  content: project.problemSolved,
-                },
-                {
-                  label: 'Solution proposée',
-                  content: project.description,
-                }
-              ]">
-              </UAccordion>
-            </div>
-          </template>
-          <img src="https://picsum.photos/400/300" width="400" height="300" alt="Illustration" class="w-full rounded-lg"
-            loading="lazy" />
-        </UPageCTA>
-        <USeparator />
-      </template>
+    <SectionsProjectSections />
+    <UPageSection id="experiences" title="Expériences" headline="Mon parcours"
+      description="Au fil de mes expériences, j’ai participé à la conception et au développement d’applications web complètes, en travaillant sur des problématiques réelles : architecture logicielle, performance, gestion des données et expérience utilisateur.">
+      <UChangelogVersions :indicator-motion="{ damping: 30, restDelta: 0.001 }">
+        <UChangelogVersion :ui="{
+          date: 'text-wrap',
+          description: 'whitespace-pre-line'
+        }" v-for="experience in experiences" :key="experience.id"
+          :title="experience.company ? `${experience.company} - ${experience.position}` : experience.position"
+          :badge="{ label: experience.contract, color: 'neutral', variant: 'soft' }" :description="experience.project"
+          :date="experience.date" />
+      </UChangelogVersions>
     </UPageSection>
+    <UPageSection id="temoignages" title="Témoignages" headline="Ils m'ont fait confiance"
+      description="Retours de personnes avec qui j’ai eu l’opportunité de collaborer sur différents projets. Leur expérience reflète mon approche du développement : rigueur technique, communication claire et solutions orientées résultat.">
+      <UMarquee pause-on-hover :overlay="false" :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }">
+        <div v-for="testimonial in testimonials" :key="testimonial.id">
+          <UPageCard variant="soft" :description="testimonial.content" :ui="{
+            description: 'before:content-[open-quote] after:content-[close-quote] line-clamp-3'
+          }" class="w-120 shrink-0 h-full ">
+            <template #footer>
+              <UUser size="xl" :name="testimonial.name" :description="`${testimonial.role} - ${testimonial.company}`"
+                :avatar="{ alt: testimonial.name }" :ui="{ description: 'line-clamp-1' }" />
+            </template>
+          </UPageCard>
+        </div>
+      </UMarquee>
+    </UPageSection>
+    <USeparator />
+    <ContactSection />
   </UPage>
 </template>

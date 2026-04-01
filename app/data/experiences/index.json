@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "date": "01/2026 - En cours",
+    "position": "Développeur Frontend Nuxt",
+    "company": "Haritech Agency",
+    "project": "Développement du site web de l’agence Haritech avec Nuxt et GSAP pour créer une expérience moderne et animée. Optimisation SEO et performance afin d’améliorer la visibilité et la conversion des visiteurs.",
+    "contract": "Entrepreneuriat"
+  },
+  {
+    "id": 2,
+    "date": "01/2025 - En cours",
+    "position": "Développeur Fullstack Angular / Spring Boot",
+    "company": null,
+    "project": "Création de la plateforme 'Going to Itasy' dédiée à la promotion du tourisme solidaire dans la région d’Itasy. Développement d’un système de gestion d’hôtels et d’un outil IA pour estimer le budget de voyage.",
+    "contract": "Projet Personnel"
+  },
+  {
+    "id": 3,
+    "date": "03/2024 - Aujoud’hui",
+    "position": "Développeur Fullstack Laravel / Vue / Nuxt",
+    "company": "Raph and Co",
+    "project": "Développement d’un écosystème RH complet incluant ATS, CV Builder et génération de documents. Architecture backend modulaire avec Laravel et dashboards Vue/Nuxt optimisés pour performance, SEO et scalabilité.",
+    "contract": "Consultant"
+  },
+  {
+    "id": 4,
+    "date": "03/2023 - 09/2023",
+    "position": "Développeur Fullstack Laravel / React / Next",
+    "company": "Ministère de l’Intérieur et de la Décentralisation",
+    "project": "Développement d’une plateforme nationale de demande de permis en ligne avec architecture API Laravel et frontend SSR. Création du portail utilisateur Next.js et du panneau d’administration React.",
+    "contract": "Stage"
+  }
+]
