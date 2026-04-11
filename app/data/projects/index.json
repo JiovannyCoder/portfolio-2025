@@ -13,7 +13,7 @@
       "TanStack Query",
       "MySQL"
     ],
-    "image": "/projects/raph-emploi.png",
+    "image": "/images/projects/raph-emploi.png",
     "link": "https://www.raph-emploi.com"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Un générateur de CV intelligent intégré à la plateforme Raph Emploi permettant aux candidats de créer facilement des CV professionnels et structurés. L'interface guide l'utilisateur dans la construction complète de son CV : informations personnelles, avatar professionnel, résumé, expériences, formations, certifications, références, compétences, langues et centres d'intérêt. Le système suit le standard JSON Resume afin de structurer les données de manière portable et exploitable. Les utilisateurs peuvent générer un CV en PDF premium avec plusieurs templates professionnels optimisés pour les recruteurs.",
     "problemSolved": "De nombreux candidats ont des CV mal structurés ou peu optimisés pour les recruteurs. L'outil simplifie la création de CV professionnels en standardisant la structure des données et en proposant des templates modernes, ce qui améliore la lisibilité et les chances d'être retenu lors d'un recrutement.",
     "stacks": ["Vue.js", "Laravel", "Vuetify"],
-    "image": "/projects/cv-builder.png",
+    "image": "/images/projects/cv-builder.png",
     "link": "https://www.raph-emploi.com/creer-un-cv"
   },
   {
@@ -33,7 +33,7 @@
     "description": "Site vitrine corporate présentant l'écosystème et les activités du groupe. Le site inclut une gestion complète du contenu permettant d'administrer les actualités, les pages institutionnelles et les communications avec les visiteurs. Un système de formulaire de contact et une gestion de newsletter permettent d'engager la communauté et de maintenir une communication régulière avec les utilisateurs.",
     "problemSolved": "Les organisations ont besoin d'une présence web claire pour communiquer leurs activités et interagir avec leur audience. Cette plateforme centralise la communication institutionnelle du groupe tout en offrant un système simple pour gérer les contenus et les interactions avec les visiteurs.",
     "stacks": ["Vue.js", "Laravel", "Vuetify"],
-    "image": "/projects/raph-and-co.png",
+    "image": "/images/projects/raph-co.png",
     "link": "https://www.raph-co.com/"
   },
   {
@@ -43,7 +43,7 @@
     "description": "Plateforme web dédiée à la promotion du tourisme solidaire dans la région d'Itasy à Madagascar. Le système permet de référencer des hôtels, leurs chambres et leurs tarifications, tout en offrant aux visiteurs un moteur de recherche avancé pour trouver des hébergements adaptés à leur budget. Une fonctionnalité d'intelligence artificielle permet d'estimer le budget global d'un voyage en fonction des préférences de l'utilisateur et génère un récapitulatif imprimable pour faciliter la planification du séjour.",
     "problemSolved": "La région d'Itasy manque de visibilité touristique et d'informations centralisées pour les voyageurs. La plateforme centralise les informations sur les hébergements et simplifie la planification des séjours tout en valorisant le tourisme local et les acteurs économiques de la région.",
     "stacks": ["Spring Boot", "Angular", "Tailwind CSS", "Angular Material"],
-    "image": "/projects/going-to-itasy.png",
+    "image": "/images/projects/going-to-itasy.png",
     "link": null
   },
   {
@@ -60,7 +60,7 @@
       "Material UI",
       "AI Document Processing"
     ],
-    "image": "/projects/pmdp.png",
+    "image": "/images/projects/pmdp.png",
     "link": null
   },
   {
@@ -70,7 +70,7 @@
     "description": "Site web premium de présentation de l'agence Haritech. Le site est conçu pour maximiser la conversion des visiteurs en clients grâce à un design moderne, des animations avancées et une expérience utilisateur fluide. Les animations sont réalisées avec GSAP pour offrir des transitions visuelles fluides et immersives. Le site est optimisé pour les performances et le référencement SEO afin d'assurer une bonne visibilité sur les moteurs de recherche.",
     "problemSolved": "Les agences digitales ont besoin d'un site web performant et visuellement impactant pour convaincre leurs futurs clients. Ce projet met l'accent sur l'expérience utilisateur, la performance et le SEO afin de renforcer la crédibilité de l'agence et augmenter les conversions.",
     "stacks": ["Nuxt 4", "Tailwind CSS", "Nuxt UI", "GSAP"],
-    "image": "/projects/haritech-agency.png",
+    "image": "/images/projects/haritech-agency.png",
     "link": "https://haritechagency.com/"
   }
 ]

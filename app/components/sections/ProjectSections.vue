@@ -38,12 +38,13 @@ const { data: projects } = useFetch('/api/projects')
                         </UAccordion>
                     </div>
                 </template>
-                <img src="https://picsum.photos/400/300" width="400" height="300" alt="Illustration"
-                    class="w-full rounded-lg" loading="lazy" />
+                <div class="w-full rounded-lg border border-muted overflow-hidden">
+                    <img :src="project.image || 'https://picsum.photos/400/300'" width="400" height="300"
+                        alt="Illustration"
+                        class="w-full rounded-lg border border-muted overflow-hidden transition-all duration-300 hover:scale-110 hover:-rotate-4" />
+                </div>
             </UPageCTA>
             <USeparator />
         </template>
     </UPageSection>
 </template>
-
-<style lang="postcss" scoped></style>

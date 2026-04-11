@@ -1,8 +1,13 @@
 <template>
-  <UFooter class="bg-neutral-50">
+  <UFooter class="bg-accented">
     <template #left>
       <p class="text-muted text-sm">
         Copyright © {{ new Date().getFullYear() }}
+      </p>
+    </template>
+     <template #default>
+      <p class="text-muted text-sm">
+        Créé par Haritina Jiovanny
       </p>
     </template>
 

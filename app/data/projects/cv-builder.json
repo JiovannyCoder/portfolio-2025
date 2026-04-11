@@ -14,6 +14,6 @@
     "Assurer une interface simple et intuitive pour rendre l’outil accessible même aux utilisateurs non techniques."
   ],
   "result": "Le projet CV Builder permet aux utilisateurs de créer rapidement un CV structuré et professionnel sans avoir à gérer la mise en page eux-mêmes.\n\nL’outil simplifie la création et la modification des CV, ce qui permet aux candidats de se concentrer sur le contenu plutôt que sur la forme.\n\nIl constitue une solution pratique pour préparer efficacement des candidatures à des offres d’emploi.",
-  "image": null,
+  "image": "/images/projects/cv-builder.png",
   "link": "https://www.raph-emploi.com/creer-un-cv"
 }
