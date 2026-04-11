@@ -67,7 +67,12 @@ const skills: PageFeatureProps[] = [
   <UPage class="scroll-smooth">
     <UPageHero id="hero" title="Code propre. Solutions fiables. Amélioration continue." headline="Mon approche"
       description="Développeur fullstack spécialisé en Laravel, Vue.js et Nuxt, je combine curiosité et rigueur pour transformer des idées en applications robustes et intuitives. J’aime explorer de nouvelles solutions, optimiser le code et créer des expériences web qui tiennent sur le long terme."
-      :links="links">
+      :links="links" :ui="{
+        title: 'text-left sm:text-center text-4xl',
+        description: 'text-left sm:text-center',
+        headline: 'justify-start sm:justify-center',
+        links: 'justify-start sm:justify-center'
+      }">
       <UMarquee>
         <img src="/images/logos/vuejs.png" alt="Logo Vue.js" width="120" />
         <img src="/images/logos/laravel.png" alt="Logo Laravel" width="120" />
@@ -78,10 +83,20 @@ const skills: PageFeatureProps[] = [
     </UPageHero>
     <UPageSection id="competences" class="border-y border-muted" title="Compétences" headline="Ce que je maîtrise"
       description="Un ensemble de compétences techniques et méthodologiques qui me permettent de créer des applications fiables, maintenables et pensées pour évoluer."
-      :features="skills"></UPageSection>
+      :features="skills" :ui="{
+        title: 'text-left sm:text-center text-4xl',
+        description: 'text-left sm:text-center',
+        headline: 'justify-start sm:justify-center',
+      }"></UPageSection>
     <SectionsProjectSections />
     <UPageSection id="experiences" title="Expériences" headline="Mon parcours"
-      description="Au fil de mes expériences, j’ai participé à la conception et au développement d’applications web complètes, en travaillant sur des problématiques réelles : architecture logicielle, performance, gestion des données et expérience utilisateur.">
+      description="Au fil de mes expériences, j’ai participé à la conception et au développement d’applications web complètes, en travaillant sur des problématiques réelles : architecture logicielle, performance, gestion des données et expérience utilisateur."
+      :ui="{
+        title: 'text-left sm:text-center text-4xl',
+        description: 'text-left sm:text-center',
+        headline: 'justify-start sm:justify-center',
+        links: 'justify-start sm:justify-center'
+      }">
       <UChangelogVersions :indicator-motion="{ damping: 30, restDelta: 0.001 }">
         <UChangelogVersion :ui="{
           date: 'text-wrap',
@@ -93,7 +108,13 @@ const skills: PageFeatureProps[] = [
       </UChangelogVersions>
     </UPageSection>
     <UPageSection id="temoignages" title="Témoignages" headline="Ils m'ont fait confiance"
-      description="Retours de personnes avec qui j’ai eu l’opportunité de collaborer sur différents projets. Leur expérience reflète mon approche du développement : rigueur technique, communication claire et solutions orientées résultat.">
+      description="Retours de personnes avec qui j’ai eu l’opportunité de collaborer sur différents projets. Leur expérience reflète mon approche du développement : rigueur technique, communication claire et solutions orientées résultat."
+      :ui="{
+        title: 'text-left sm:text-center text-4xl',
+        description: 'text-left sm:text-center',
+        headline: 'justify-start sm:justify-center',
+        links: 'justify-start sm:justify-center'
+      }">
       <UMarquee pause-on-hover :overlay="false" :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }">
         <div v-for="testimonial in testimonials" :key="testimonial.id">
           <UPageCard variant="soft" :description="testimonial.content" :ui="{

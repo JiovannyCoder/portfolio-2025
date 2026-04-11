@@ -4,7 +4,13 @@ const { data: projects } = useFetch('/api/projects')
 
 <template>
     <UPageSection id="projets" title="Projets réalisés" headline="Ce que j’ai construit"
-        description="Une collection de solutions concrètes où j’ai appliqué ma rigueur technique et ma recherche de simplicité. Chaque projet reflète ma manière d’aborder les défis : comprendre le besoin, structurer proprement la logique et livrer des interfaces intuitives et fiables.">
+        description="Une collection de solutions concrètes où j’ai appliqué ma rigueur technique et ma recherche de simplicité. Chaque projet reflète ma manière d’aborder les défis : comprendre le besoin, structurer proprement la logique et livrer des interfaces intuitives et fiables."
+        :ui="{
+            title: 'text-left sm:text-center text-4xl',
+            description: 'text-left sm:text-center',
+            headline: 'justify-start sm:justify-center',
+            links: 'justify-start sm:justify-center'
+        }">
         <template v-for="project in projects" :key="project.name">
             <UPageCTA :ui="{
                 container: 'lg:py-0 lg:px-0 px-0!'
