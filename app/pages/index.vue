@@ -69,6 +69,19 @@ const testimonials = computed(() => {
   const path = `/data/testimonials/${locale.value}.json`
   return (testimonialFiles[path] as any)?.default || []
 })
+
+useSeoMeta({
+  title: 'Haritina Jiovanny | Développeur Full-Stack Laravel & Nuxt Expert',
+  ogTitle: 'Haritina Jiovanny | Développeur Full-Stack Laravel & Nuxt Expert',
+  description: 'Développeur Full-Stack spécialisé Laravel, Nuxt.js et Vue.js à Madagascar. Expert en architecture DDD et SaaS haute performance. Découvrez mes projets et expertises.',
+  ogDescription: 'Expert Laravel & Nuxt.js. Focus sur l’architecture logicielle (DDD), le développement d’applications web modernes et les solutions scalables.',
+  keywords: 'Haritina Jiovanny, Développeur Full-Stack, Laravel, Nuxt.js, Vue.js, Architecture DDD, Développeur Web Madagascar, Freelance Laravel, Expert PHP, Génie Logiciel, SaaS, Développement API',
+  ogImage: '/og-image.png',
+  twitterCard: 'summary_large_image',
+  ogType: 'website',
+  ogLocale: 'fr_FR',
+  author: 'Haritina Jiovanny',
+})
 </script>
 
 <template>
