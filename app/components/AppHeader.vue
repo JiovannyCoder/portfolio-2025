@@ -35,7 +35,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 <template>
   <UHeader :ui="{
     root: 'sm:max-w-6xl 2xl:max-w-7xl sm:mx-auto sm:rounded-full sm:mt-4 sm:border-none sm:shadow'
-  }">
+  }" :to="$localePath('/')">
     <template #title>
       <Logo />
     </template>

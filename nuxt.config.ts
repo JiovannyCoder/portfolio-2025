@@ -32,4 +32,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  runtimeConfig: {
+    googleFormUrl: '',
+  },
 })
