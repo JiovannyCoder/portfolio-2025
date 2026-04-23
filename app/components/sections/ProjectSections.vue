@@ -1,11 +1,13 @@
 <script lang="ts" setup>
-const { data: projects } = useFetch('/api/projects')
+const { locale } = useI18n()
+const { data: projects } = await useFetch('/api/projects', {
+    query: { lang: locale }
+})
 </script>
 
 <template>
-    <UPageSection id="projets" title="Projets réalisés" headline="Ce que j’ai construit"
-        description="Une collection de solutions concrètes où j’ai appliqué ma rigueur technique et ma recherche de simplicité. Chaque projet reflète ma manière d’aborder les défis : comprendre le besoin, structurer proprement la logique et livrer des interfaces intuitives et fiables."
-        :ui="{
+    <UPageSection id="projets" :title="$t('projects.title')" :headline="$t('projects.subtitle')"
+        :description="$t('projects.description')" :ui="{
             title: 'text-left sm:text-center text-4xl',
             description: 'text-left sm:text-center',
             headline: 'justify-start sm:justify-center',
@@ -16,9 +18,9 @@ const { data: projects } = useFetch('/api/projects')
                 container: 'lg:py-0 lg:px-0 px-0!'
             }" :links="[
                 {
-                    label: 'Voir plus',
+                    label: $t('projects.items.actions.more'),
                     trailingIcon: 'lucide-arrow-right',
-                    to: `/projets/${project.slug}`
+                    to: $localePath(`/projets/${project.slug}`)
                 }
             ]" :title="project.name" :description="project.excerpt" orientation="horizontal" reverse variant="naked">
                 <template #body>
@@ -33,11 +35,11 @@ const { data: projects } = useFetch('/api/projects')
                             body: 'text-base md:text-lg text-muted'
                         }" :items="[
                             {
-                                label: 'Problème posé',
+                                label: $t('projects.items.accordion.title.problem'),
                                 content: project.problemSolved,
                             },
                             {
-                                label: 'Solution proposée',
+                                label: $t('projects.items.accordion.title.solution'),
                                 content: project.description,
                             }
                         ]">

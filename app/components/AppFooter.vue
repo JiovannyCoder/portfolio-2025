@@ -7,7 +7,7 @@
     </template>
      <template #default>
       <p class="text-muted text-sm">
-        Créé par Haritina Jiovanny
+       {{ $t('footer.title') }}
       </p>
     </template>
 

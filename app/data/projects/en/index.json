@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "raph-emploi",
+    "name": "Raph Emploi",
+    "excerpt": "Recruitment platform connecting recruiters and candidates with full management of job offers, applications, and hiring pipelines. It centralizes the entire recruitment process in a modern dashboard.",
+    "description": "A complete recruitment platform connecting recruiters and candidates. The system allows companies to publish job offers, manage applications, and track candidates through an advanced hiring pipeline. Recruiters have access to a dashboard with detailed application management (candidate profile, CV, activity history, evaluations, Kanban pipeline, etc.). The platform also includes a subscription system for companies, job promotion options to increase visibility, and a recommendation engine for relevant candidate profiles. On the candidate side, users can search and apply for jobs, manage their professional profile, create and store multiple CVs, track application events (interviews, hiring stages), save job offers, and discover the most active recruiters. The entire infrastructure is deployed with CI/CD, Docker, and GitLab, with automated tests to ensure system quality and stability.",
+    "problemSolved": "Recruitment processes are often fragmented across multiple tools and lack structured tracking. The platform centralizes the entire recruitment lifecycle (job posting, applications, candidate tracking, communication, and analytics), enabling recruiters to efficiently manage their hiring pipelines and candidates to gain better visibility over their applications.",
+    "stacks": [
+      "Vue.js",
+      "Nuxt",
+      "Laravel",
+      "Vuetify",
+      "TanStack Query",
+      "MySQL"
+    ],
+    "image": "/images/projects/raph-emploi.png",
+    "link": "https://www.raph-emploi.com"
+  },
+  {
+    "slug": "cv-builder",
+    "name": "CV Builder",
+    "excerpt": "Smart CV generator allowing candidates to easily create professional and structured resumes. CVs can be exported as PDFs with multiple templates optimized for recruiters.",
+    "description": "An intelligent CV generator integrated into the Raph Emploi platform, allowing candidates to easily create professional and structured resumes. The interface guides users through building their CV: personal information, professional avatar, summary, experience, education, certifications, references, skills, languages, and interests. The system follows the JSON Resume standard to structure data in a portable and reusable way. Users can generate premium PDF CVs with multiple professional templates optimized for recruiters.",
+    "problemSolved": "Many candidates have poorly structured or non-optimized resumes. This tool simplifies the creation of professional CVs by standardizing data structure and offering modern templates, improving readability and increasing the chances of being selected during recruitment.",
+    "stacks": ["Vue.js", "Laravel", "Vuetify"],
+    "image": "/images/projects/cv-builder.png",
+    "link": "https://www.raph-emploi.com/creer-un-cv"
+  },
+  {
+    "slug": "raph-co",
+    "name": "Raph and Co",
+    "excerpt": "Corporate website showcasing the group’s ecosystem and activities with content management, news, and visitor communication features.",
+    "description": "A corporate showcase website presenting the group’s ecosystem and activities. The site includes a full content management system to handle news, institutional pages, and communication with visitors. A contact form system and newsletter management help engage the community and maintain regular communication with users.",
+    "problemSolved": "Organizations need a clear web presence to communicate their activities and interact with their audience. This platform centralizes the group’s institutional communication while providing a simple system to manage content and visitor interactions.",
+    "stacks": ["Vue.js", "Laravel", "Vuetify"],
+    "image": "/images/projects/raph-co.png",
+    "link": "https://www.raph-co.com/"
+  },
+  {
+    "slug": "going-to-itasy",
+    "name": "Going to Itasy",
+    "excerpt": "Tourism promotion platform for Itasy, allowing users to explore hotels, compare accommodations, and estimate travel budgets using an intelligent engine.",
+    "description": "A web platform dedicated to promoting sustainable tourism in the Itasy region of Madagascar. The system allows listing hotels, their rooms, and pricing, while offering visitors an advanced search engine to find accommodations suited to their budget. An AI feature estimates the overall travel budget based on user preferences and generates a printable summary to help plan the trip.",
+    "problemSolved": "The Itasy region lacks tourism visibility and centralized information for travelers. The platform centralizes accommodation data and simplifies trip planning while promoting local tourism and regional economic actors.",
+    "stacks": ["Spring Boot", "Angular", "Tailwind CSS", "Angular Material"],
+    "image": "/images/projects/going-to-itasy.png",
+    "link": null
+  },
+  {
+    "slug": "pmdp",
+    "name": "PMDP - Malagasy Driving License Application Platform",
+    "excerpt": "Digital platform modernizing the driving license application process in Madagascar with file management, appointments, and automated document analysis.",
+    "description": "A digital platform designed to modernize the driving license application process in Madagascar. It connects applicants, CIM agents, and local driving schools to simplify and automate administrative procedures. Users can submit applications, upload required documents, and schedule appointments for each step of the process. The platform includes an AI-powered document analysis system to extract and structure information from submitted files, facilitating archiving and administrative processing.",
+    "problemSolved": "Driving license application procedures are often long, paper-based, and difficult to track. This platform fully digitizes the process, simplifies appointment management, and automates document processing, reducing delays and improving administrative efficiency.",
+    "stacks": [
+      "Laravel",
+      "React",
+      "Next.js",
+      "TanStack Query",
+      "Material UI",
+      "AI Document Processing"
+    ],
+    "image": "/images/projects/pmdp.png",
+    "link": null
+  },
+  {
+    "slug": "haritech-agency",
+    "name": "Haritech Agency",
+    "excerpt": "Premium digital agency website with advanced animations, modern design, and SEO optimization to maximize visitor conversion.",
+    "description": "A premium website for presenting the Haritech agency. The site is designed to maximize visitor-to-client conversion through modern design, advanced animations, and a smooth user experience. Animations are powered by GSAP to provide fluid and immersive visual transitions. The site is optimized for performance and SEO to ensure strong visibility on search engines.",
+    "problemSolved": "Digital agencies need high-performing and visually impactful websites to convince potential clients. This project focuses on user experience, performance, and SEO to strengthen the agency’s credibility and increase conversions.",
+    "stacks": ["Nuxt 4", "Tailwind CSS", "Nuxt UI", "GSAP"],
+    "image": "/images/projects/haritech-agency.png",
+    "link": "https://haritechagency.com/"
+  }
+]

@@ -1,30 +1,32 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from "@nuxt/ui";
 
+const localePath = useLocalePath()
+const { t, locale, setLocale } = useI18n()
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: "Accueil",
-    to: "/#hero",
+    label: t('navigation.links.home'),
+    to: localePath("/#hero"),
     exactHash: true,
   },
   {
-    label: "Competences",
-    to: "/#competences",
+    label: t('navigation.links.skills'),
+    to: localePath("/#competences"),
     exactHash: true
   },
   {
-    label: "Projets",
-    to: "/#projets",
+    label: t('navigation.links.projects'),
+    to: localePath("/#projets"),
     exactHash: true
   },
   {
-    label: "Expériences",
-    to: "/#experiences",
+    label: t('navigation.links.experiences'),
+    to: localePath("/#experiences"),
     exactHash: true
   },
   {
-    label: "Contact",
-    to: "/#contact",
+    label: t('navigation.links.contact'),
+    to: localePath("/#contact"),
     exactHash: true
   },
 ]);
@@ -41,9 +43,12 @@ const items = computed<NavigationMenuItem[]>(() => [
     <UNavigationMenu variant="link" :items="items" />
     <template #right>
       <UColorModeButton />
-      <UButton variant="soft" href="mailto:haritinamg@gmail.com" icon="ri-mail-line"></UButton>
-      <UButton variant="soft" href="https://www.linkedin.com/in/haritina-jiovanny-razafy" target="_blank"
-        icon="ri-linkedin-line"></UButton>
+      <UButton color="neutral" :variant="locale == 'fr' ? 'soft' : 'ghost'" @click="() => setLocale('fr')">
+        FR
+      </UButton>
+      <UButton color="neutral" :variant="locale == 'en' ? 'soft' : 'ghost'" @click="() => setLocale('en')">
+        EN
+      </UButton>
     </template>
 
     <template #body>

@@ -1,0 +1,165 @@
+{
+  "navigation": {
+    "links": {
+      "home": "Accueil",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "experiences": "Expériences",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Code propre. Solutions fiables. Amélioration continue.",
+      "subtitle": "Mon approche",
+      "description": "Développeur fullstack spécialisé en Laravel, Vue.js et Nuxt, je combine curiosité et rigueur pour transformer des idées en applications robustes et intuitives. J’aime explorer de nouvelles solutions, optimiser le code et créer des expériences web qui tiennent sur le long terme.",
+      "links": {
+        "contact": "Me Contacter",
+        "projects": "Mes Projets"
+      }
+    },
+    "skills": {
+      "title": "Compétences",
+      "subtitle": "Ce que je maîtrise",
+      "description": "Un ensemble de compétences techniques et méthodologiques qui me permettent de créer des applications fiables, maintenables et pensées pour évoluer.",
+      "items": {
+        "backend": {
+          "title": "Backend",
+          "description": "Développement d’API robustes avec Laravel, Eloquent et Sanctum, en privilégiant une logique métier propre et durable."
+        },
+        "frontend": {
+          "title": "Frontend",
+          "description": "Création d’interfaces réactives et évolutives avec Vue.js, Nuxt.js, la Composition API et Vue Query."
+        },
+        "design": {
+          "title": "UI & Design",
+          "description": "Construction d’interfaces harmonisées grâce à Vuetify, Nuxt UI, Material Design et une attention constante à la cohérence visuelle."
+        },
+        "architecture": {
+          "title": "Architecture & Patterns",
+          "description": "Structuration d’applications claires et scalables avec des architectures feature-based, des workflows REST et des états métier maîtrisés."
+        },
+        "database": {
+          "title": "Base de données",
+          "description": "Modélisation fiable et optimisation des données via MySQL, migrations, factories et relations complexes."
+        },
+        "tools": {
+          "title": "Outils & Workflow",
+          "description": "Un environnement de développement solide avec Git, GitHub, CI/CD, tests et outils d’optimisation continue."
+        }
+      }
+    },
+    "experiences": {
+      "title": "Expériences",
+      "subtitle": "Mon parcours",
+      "description": "Au fil de mes expériences, j’ai participé à la conception et au développement d’applications web complètes, en travaillant sur des problématiques réelles : architecture logicielle, performance, gestion des données et expérience utilisateur."
+    },
+    "testimonials": {
+      "title": "Témoignages",
+      "subtitle": "Ils m'ont fait confiance",
+      "description": "Retours de personnes avec qui j’ai eu l’opportunité de collaborer sur différents projets. Leur expérience reflète mon approche du développement : rigueur technique, communication claire et solutions orientées résultat."
+    }
+  },
+  "projects": {
+    "title": "Projets réalisés",
+    "subtitle": "Ce que j’ai construit",
+    "description": "Une collection de solutions concrètes où j’ai appliqué ma rigueur technique et ma recherche de simplicité. Chaque projet reflète ma manière d’aborder les défis : comprendre le besoin, structurer proprement la logique et livrer des interfaces intuitives et fiables.",
+    "items": {
+      "accordion": {
+        "title": {
+          "problem": "Problème posé",
+          "solution": "Solution proposée"
+        }
+      },
+      "actions": {
+        "more": "Voir plus"
+      }
+    },
+    "single": {
+      "navigation": {
+        "breadcrumbs": {
+          "title": "Projets"
+        },
+        "links": {
+          "project": "Lien du projet"
+        }
+      },
+      "sections": {
+        "context": {
+          "title": "Contexte"
+        },
+        "problem": {
+          "title": "Problème"
+        },
+        "solution": {
+          "title": "Solution proposée"
+        },
+        "architecture": {
+          "title": "Architecture",
+          "stack": {
+            "title": "Technologies utilisée"
+          },
+          "explanation": {
+            "title": "Explication"
+          }
+        },
+        "result": {
+          "title": "Résultat"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Un projet en tête ? — Parlons-en",
+    "description": "Le design efficace ne fait pas que séduire : il convertit. Une expérience utilisateur solide transforme l’intérêt en engagement durable.",
+    "form": {
+      "name": {
+        "label": "Nom",
+        "validation": {
+          "required": "Veuillez renseigner votre nom",
+          "min": "Le nom doit contenir au moins :min caractères"
+        }
+      },
+      "email": {
+        "label": "Email",
+        "validation": {
+          "required": "Veuillez renseigner votre email",
+          "email": "L'email doit être valide"
+        }
+      },
+      "service": {
+        "label": "Service",
+        "validation": {
+          "required": "Veuillez renseigner le service demandé"
+        },
+        "options": {
+          "simple_websites": "Sites Vitrines & Landing Pages",
+          "e_commerce": "Mini E-commerce",
+          "custom_websites": "Applications Web Sur-Mesure",
+          "dashboards": "Dashboards & Analytics"
+        }
+      },
+      "description": {
+        "label": "Description",
+        "validation": {
+          "required": "Veuillez renseigner une petite description de votre idée",
+          "min": "La description doit contenir au moins :min caractères"
+        }
+      },
+      "actions": {
+        "send": {
+          "label": "Envoyer"
+        }
+      }
+    },
+    "alerts": {
+      "success": {
+        "title": "Message envoyé !",
+        "description": "Votre message a bien été envoyé ! Nous vous répondrons bientôt."
+      }
+    }
+  },
+  "footer": {
+    "title": "Créé par Haritina Jiovanny"
+  }
+}

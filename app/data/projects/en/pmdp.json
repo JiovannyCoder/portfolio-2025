@@ -1,0 +1,19 @@
+{
+  "name": "PMPD",
+  "context": "PMPD is a project developed to address project management and tracking needs within an organization.\n\nThe goal was to provide a centralized platform allowing teams to plan, track, and collaborate efficiently on their projects.\n\nThe project originated from the observation that traditional methods, often based on spreadsheets or emails, were inefficient and prone to errors.",
+  "problem": "Project management was scattered and poorly structured.\n\nTeams faced difficulties tracking task progress, meeting deadlines, and communicating effectively.\n\nThis lack of a centralized tool led to delays, confusion, and limited visibility for managers.",
+  "solution": "PMPD provides a web platform that centralizes project management and task tracking.\n\nUsers can create projects, assign tasks, track progress, and collaborate in real time.\n\nThe system provides clear dashboards for managers to visualize the overall state of projects and quickly identify critical points.\n\nThe goal was to simplify management while improving transparency and team efficiency.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "The backend, developed with Laravel, handles business logic, project, task, and user management.\n\nThe frontend, built with Vue.js and Vuetify, provides an intuitive interface for creating, tracking, and updating projects.\n\nThe frontend/backend separation ensures scalability and makes it easier to add new features."
+  },
+  "technicalChallenges": [
+    "Designing a flexible data model to manage different types of projects and tasks.",
+    "Implementing real-time notifications to ensure effective team collaboration.",
+    "Providing clear and dynamic dashboards reflecting the state of projects and tasks.",
+    "Ensuring security and access control based on user roles."
+  ],
+  "result": "PMPD significantly improved project management and tracking.\n\nTeams now have a centralized tool to collaborate, track tasks, and meet deadlines.\n\nThe project increased productivity and transparency within the organization.",
+  "image": null,
+  "link": null
+}

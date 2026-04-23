@@ -1,24 +1,27 @@
 <script setup lang="ts">
 import { object, string } from "yup"
 
+const { t } = useI18n()
+
 const schema = object({
   name: string()
     .trim()
-    .min(3, "Le nom doit contenir au moins 3 caractères")
-    .required("Veuillez renseigner votre nom"),
+    .min(3, t('contact.form.name.validation.min', { min: 3 }))
+    .required(t('contact.form.name.validation.required')),
 
   email: string()
-    .email("L'email doit être valide")
-    .required("Veuillez renseigner votre email"),
+    .email(t('contact.form.email.validation.email'))
+    .required(t('contact.form.email.validation.required')),
 
   service: string()
-    .required("Veuillez renseigner le service demandé"),
+    .required(t('contact.form.service.validation.required')),
 
   description: string()
     .trim()
-    .min(3, "La description doit contenir au moins 3 caractères")
-    .required("Veuillez renseigner une petite description de votre idée")
+    .min(3, t('contact.form.description.validation.min', { min: 3 }))
+    .required(t('contact.form.description.validation.required'))
 })
+
 const initialState = {
   name: undefined,
   email: undefined,
@@ -28,10 +31,10 @@ const initialState = {
 const state = reactive({ ...initialState })
 
 const serviceOptions = [
-  "Sites Vitrines & Landing Pages",
-  "Mini E-commerce",
-  "Applications Web Sur-Mesure",
-  "Dashboards & Analytics"
+  t('contact.form.service.options.simple_websites'),
+  t('contact.form.service.options.e_commerce'),
+  t('contact.form.service.options.custom_websites'),
+  t('contact.form.service.options.dashboards'),
 ]
 
 const toast = useToast()
@@ -48,8 +51,8 @@ const { execute, pending } = useFetch("/api/contact", {
   onResponse({ response }) {
     if (response.status === 204) {
       toast.add({
-        title: "Message envoyé !",
-        description: "Votre message a bien été envoyé ! Nous vous répondrons bientôt.",
+        title: t('contact.alerts.success.title'),
+        description: t('contact.alerts.success.description'),
         color: "success"
       })
       // reset form
@@ -63,40 +66,42 @@ const { execute, pending } = useFetch("/api/contact", {
   <UPageSection id="contact" orientation="horizontal">
     <template #title>
       <h2 class="leading-tight">
-        Un projet en tête ? <br>
-        — Parlons-en
+        {{ $t('contact.title') }}
       </h2>
     </template>
     <template #description>
       <p>
-        Le design efficace ne fait pas que séduire : il convertit.
-        Une expérience utilisateur solide transforme l’intérêt en engagement durable.
+        {{ $t('contact.description') }}
       </p>
     </template>
     <template #links>
-      <UButton color="neutral" leading-icon="i-lucide-phone" size="xl" to="tel:+261382862245" target="_blank">
-        Contactez-moi
+      <UButton size="xl" variant="subtle" to="tel:+261382862245" icon="i-lucide-phone" target="_blank">
       </UButton>
+      <UButton size="xl" variant="subtle" href="mailto:haritinamg@gmail.com" icon="ri-mail-line">
+      </UButton>
+      <UButton size="xl" variant="subtle" href="https://www.linkedin.com/in/haritina-jiovanny-razafy" target="_blank"
+        icon="ri-linkedin-line"></UButton>
     </template>
-    <UForm :schema="schema" :state="state" class="space-y-4 rounded-2xl md:p-10 p-5" @submit="onSubmit">
-      <UFormField label="Nom" name="name" size="xl">
+    <UForm :schema="schema" :state="state" class="space-y-4 rounded-2xl md:p-10 sm:p-5" @submit="onSubmit">
+      <UFormField :label="$t('contact.form.name.label')" name="name" size="xl">
         <UInput variant="subtle" v-model="state.name" class="w-full" />
       </UFormField>
 
-      <UFormField label="Email" name="email" size="xl">
+      <UFormField :label="$t('contact.form.email.label')" name="email" size="xl">
         <UInput variant="subtle" v-model="state.email" class="w-full" />
       </UFormField>
 
-      <UFormField label="Service" name="service" size="xl">
+      <UFormField :label="$t('contact.form.service.label')" name="service" size="xl">
         <USelect variant="subtle" v-model="state.service" :items="serviceOptions" class="w-full" />
       </UFormField>
 
-      <UFormField label="Description" name="description" size="xl">
+      <UFormField :label="$t('contact.form.description.label')" name="description" size="xl">
         <UTextarea variant="subtle" v-model="state.description" class="w-full" />
       </UFormField>
 
-      <UButton size="xl" type="submit" leading-icon="i-lucide-send" :loading="pending">
-        Envoyer
+      <UButton size="xl" class="w-full sm:w-auto justify-center" type="submit" leading-icon="i-lucide-send"
+        :loading="pending">
+        {{ $t('contact.form.actions.send.label') }}
       </UButton>
     </UForm>
   </UPageSection>

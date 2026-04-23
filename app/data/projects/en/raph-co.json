@@ -1,0 +1,19 @@
+{
+  "name": "Raph and Co",
+  "context": "Raph and Co is a project carried out within the company of the same name.\n\nThe goal was to create a digital platform to present the company, its activities, and its services while serving as an entry point for users interested in its ecosystem.\n\nThe company wanted to modernize its online presence and have a website capable of reflecting its identity, values, and professionalism.",
+  "problem": "Before this project, the company’s digital visibility was limited.\n\nInformation about services, projects, or opportunities was not centralized in a clear and accessible platform.\n\nVisitors had limited ways to quickly understand what the company actually offered or how to get in touch.\n\nThis limited online credibility and the company’s ability to attract new partners, clients, or talent.",
+  "solution": "The solution was to design a modern web platform to clearly present the company, its activities, and its projects.\n\nThe site serves both as an institutional showcase and as an entry point to the company’s various initiatives, including its digital platforms.\n\nThe interface highlights services, completed projects, and facilitates contact with the company.\n\nThe goal was to build a professional, clear, and scalable digital presence.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "The project is built around an API architecture with Laravel handling the backend and Vue.js the user interface.\n\nThe backend manages dynamic content, company information, and user interactions.\n\nThe frontend provides a modern and responsive interface to present services, projects, and information clearly and attractively.\n\nThis architecture also makes it easy to add new sections or features in the future."
+  },
+  "technicalChallenges": [
+    "Designing a flexible content structure to manage different types of company information (services, projects, presentation).",
+    "Creating a clear and professional interface that reflects the company’s image.",
+    "Implementing a scalable architecture to easily add new sections or related platforms.",
+    "Optimizing user experience to ensure simple and intuitive navigation."
+  ],
+  "result": "The Raph and Co project provided the company with a modern and professional digital presence.\n\nThe platform now centralizes essential information about the company, its activities, and its projects.\n\nIt also serves as a gateway to the company’s digital ecosystem while improving its visibility and online credibility.",
+  "image": "/images/projects/raph-co.png",
+  "link": "https://www.raph-co.com/"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Raph Emploi",
+  "context": "Raph Emploi is a project I developed within the company Raph and Co.\n\nThe goal was to create a digital platform capable of centralizing job opportunities and simplifying interactions between recruiters and candidates.\n\nThe company wanted a modern tool to digitize the recruitment process, which was often still managed through emails, Excel files, or informal messages.",
+  "problem": "The recruitment process was fragmented and poorly structured.\n\nRecruiters struggled to manage applications, track profiles, and communicate effectively with candidates.\n\nOn the candidate side, it was difficult to find relevant job offers, track applications, or showcase their skills.\n\nThis lack of centralization led to time loss, limited visibility, and a poor experience for both parties.",
+  "solution": "Raph Emploi provides a complete platform connecting recruiters, candidates, job offers, and applications within a single ecosystem.\n\nRecruiters can publish job offers, manage received applications, and track the progress of the recruitment process.\n\nCandidates can create a professional profile, easily apply to jobs, and track the status of their applications.\n\nThe goal was to make the process more fluid, transparent, and efficient for all stakeholders.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "The application is built with a Laravel REST API backend and a SPA frontend developed with Vue.js.\n\nThe backend manages business logic, relationships between entities (jobs, applications, users), and recruitment process rules.\n\nThe frontend provides a dynamic interface allowing users to interact easily with the platform, including searching for jobs, applying, and managing applications.\n\nThe clear separation between API and interface improves scalability and facilitates adding new features."
+  },
+  "technicalChallenges": [
+    "Designing a data model capable of efficiently handling relationships between recruiters, job offers, applications, and candidates.",
+    "Implementing an application tracking system allowing recruiters to quickly visualize the status of each process.",
+    "Optimizing search and filtering of job offers to help candidates quickly find relevant opportunities.",
+    "Ensuring a smooth user experience despite the complexity of interactions between system entities."
+  ],
+  "result": "The Raph Emploi platform now centralizes the recruitment process into a single tool.\n\nRecruiters can publish and manage their job offers more efficiently, while candidates have a clear space to track their applications and discover new opportunities.\n\nThe project helped structure recruitment within the company’s ecosystem while providing a modern and intuitive user experience.",
+  "image": "/images/projects/raph-emploi.png",
+  "link": "https://www.raph-emploi.com"
+}

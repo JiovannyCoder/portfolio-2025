@@ -1,28 +1,39 @@
-import cvBuilderProject from "~/data/projects/cv-builder.json";
-import goingToItasyProject from "~/data/projects/going-to-itasy.json";
-import haritechAgencyProject from "~/data/projects/haritech-agency.json";
-import raphAndCoProject from "~/data/projects/raph-co.json";
-import raphEmploiProject from "~/data/projects/raph-emploi.json";
-import pmdpProject from "~/data/projects/pmdp.json";
-
 export default defineEventHandler(async (event) => {
-  const slug = getRouterParam(event, "slug");
+  const slug = getRouterParam(event, 'slug')
+  const { lang = 'fr' } = getQuery(event)
 
-  const projectsMap = new Map<string, ProjectDetails>();
+  const storage = useStorage('projectsData')
 
-  projectsMap.set("cv-builder", cvBuilderProject as ProjectDetails);
-  projectsMap.set("going-to-itasy", goingToItasyProject as ProjectDetails);
-  projectsMap.set("haritech-agency", haritechAgencyProject as ProjectDetails);
-  projectsMap.set("raph-co", raphAndCoProject as ProjectDetails);
-  projectsMap.set("raph-emploi", raphEmploiProject as ProjectDetails);
-  projectsMap.set("pmdp", pmdpProject as ProjectDetails);
+  const storageKey = `${lang}/${slug}.json`
 
-  if (!projectsMap.has(slug!)) {
+  const allowedSlugs = [
+    'cv-builder',
+    'going-to-itasy',
+    'haritech-agency',
+    'raph-co',
+    'raph-emploi',
+    'pmdp',
+  ]
+
+  if (!slug || !allowedSlugs.includes(slug)) {
     throw createError({
-      status: 404,
-      statusText: "Project not found",
-    });
+      statusCode: 404,
+      statusMessage: `Project "${slug}" not found`,
+    })
   }
 
-  return projectsMap.get(slug!);
-});
+  try {
+    const data = await storage.getItem(storageKey)
+
+    if (!data) {
+      throw new Error('Fichier vide ou introuvable')
+    }
+
+    return data as ProjectDetails
+  } catch (e) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: `Projects Not Found`,
+    })
+  }
+})

@@ -1,16 +1,20 @@
 <script setup lang="ts">
 import type { ButtonProps, PageFeatureProps } from "@nuxt/ui";
-import experiences from "~/data/experiences/index.json";
-import testimonials from "~/data/testimonials/index.json";
 
+
+const experienceFiles = import.meta.glob('~/data/experiences/*.json', { eager: true })
+const testimonialFiles = import.meta.glob('~/data/testimonials/*.json', { eager: true })
+
+const localPath = useLocalePath()
+const { t, locale } = useI18n()
 const links = ref<ButtonProps[]>([
   {
-    label: "Me Contacter",
-    to: "/#contact",
+    label: t('home.hero.links.contact'),
+    to: localPath("/#contact"),
   },
   {
-    label: "Mes Projets",
-    to: "/projets",
+    label: t('home.hero.links.projects'),
+    to: localPath("/projets"),
     color: "neutral",
     variant: "subtle",
     trailingIcon: "ri-arrow-right-line",
@@ -19,55 +23,58 @@ const links = ref<ButtonProps[]>([
 
 const skills: PageFeatureProps[] = [
   {
-    title: "Backend",
+    title: t('home.skills.items.backend.title'),
     orientation: "vertical",
-    description:
-      "Développement d’API robustes avec Laravel, Eloquent et Sanctum, en privilégiant une logique métier propre et durable.",
+    description: t('home.skills.items.backend.description'),
     icon: "ri-server-line",
   },
   {
-    title: "Frontend",
+    title: t('home.skills.items.frontend.title'),
     orientation: "vertical",
-    description:
-      "Création d’interfaces réactives et évolutives avec Vue.js, Nuxt.js, la Composition API et Vue Query.",
+    description: t('home.skills.items.frontend.description'),
     icon: "ri-window-line",
   },
   {
-    title: "UI & Design",
+    title: t('home.skills.items.design.title'),
     orientation: "vertical",
-    description:
-      "Construction d’interfaces harmonisées grâce à Vuetify, Nuxt UI, Material Design et une attention constante à la cohérence visuelle.",
+    description: t('home.skills.items.design.description'),
     icon: "ri-layout-line",
   },
   {
-    title: "Architecture & Patterns",
+    title: t('home.skills.items.architecture.title'),
     orientation: "vertical",
-    description:
-      "Structuration d’applications claires et scalables avec des architectures feature-based, des workflows REST et des états métier maîtrisés.",
+    description: t('home.skills.items.architecture.description'),
     icon: "ri-line-chart-line",
   },
   {
-    title: "Base de données",
+    title: t('home.skills.items.database.title'),
     orientation: "vertical",
-    description:
-      "Modélisation fiable et optimisation des données via MySQL, migrations, factories et relations complexes.",
+    description: t('home.skills.items.database.description'),
     icon: "ri-database-2-line",
   },
   {
-    title: "Outils & Workflow",
+    title: t('home.skills.items.tools.title'),
     orientation: "vertical",
-    description:
-      "Un environnement de développement solide avec Git, GitHub, CI/CD, tests et outils d’optimisation continue.",
+    description: t('home.skills.items.tools.description'),
     icon: "ri-tools-line",
   },
 ];
+
+const experiences = computed(() => {
+  const path = `/data/experiences/${locale.value}.json`
+  return (experienceFiles[path] as any)?.default || []
+})
+
+const testimonials = computed(() => {
+  const path = `/data/testimonials/${locale.value}.json`
+  return (testimonialFiles[path] as any)?.default || []
+})
 </script>
 
 <template>
   <UPage class="scroll-smooth">
-    <UPageHero id="hero" title="Code propre. Solutions fiables. Amélioration continue." headline="Mon approche"
-      description="Développeur fullstack spécialisé en Laravel, Vue.js et Nuxt, je combine curiosité et rigueur pour transformer des idées en applications robustes et intuitives. J’aime explorer de nouvelles solutions, optimiser le code et créer des expériences web qui tiennent sur le long terme."
-      :links="links" :ui="{
+    <UPageHero id="hero" :title="$t('home.hero.title')" :headline="$t('home.hero.subtitle')"
+      :description="$t('home.hero.description')" :links="links" :ui="{
         title: 'text-left sm:text-center text-4xl',
         description: 'text-left sm:text-center',
         headline: 'justify-start sm:justify-center',
@@ -81,17 +88,15 @@ const skills: PageFeatureProps[] = [
         <img src="/images/logos/tailwind.png" alt="Logo Tailwind CSS" width="120" />
       </UMarquee>
     </UPageHero>
-    <UPageSection id="competences" class="border-y border-muted" title="Compétences" headline="Ce que je maîtrise"
-      description="Un ensemble de compétences techniques et méthodologiques qui me permettent de créer des applications fiables, maintenables et pensées pour évoluer."
-      :features="skills" :ui="{
+    <UPageSection id="competences" class="border-y border-muted" :title="$t('home.skills.title')"
+      :headline="$t('home.skills.subtitle')" :description="$t('home.skills.description')" :features="skills" :ui="{
         title: 'text-left sm:text-center text-4xl',
         description: 'text-left sm:text-center',
         headline: 'justify-start sm:justify-center',
       }"></UPageSection>
     <SectionsProjectSections />
-    <UPageSection id="experiences" title="Expériences" headline="Mon parcours"
-      description="Au fil de mes expériences, j’ai participé à la conception et au développement d’applications web complètes, en travaillant sur des problématiques réelles : architecture logicielle, performance, gestion des données et expérience utilisateur."
-      :ui="{
+    <UPageSection id="experiences" :title="$t('home.experiences.title')" :headline="$t('home.experiences.subtitle')"
+      :description="$t('home.experiences.description')" :ui="{
         title: 'text-left sm:text-center text-4xl',
         description: 'text-left sm:text-center',
         headline: 'justify-start sm:justify-center',
@@ -107,9 +112,8 @@ const skills: PageFeatureProps[] = [
           :date="experience.date" />
       </UChangelogVersions>
     </UPageSection>
-    <UPageSection id="temoignages" title="Témoignages" headline="Ils m'ont fait confiance"
-      description="Retours de personnes avec qui j’ai eu l’opportunité de collaborer sur différents projets. Leur expérience reflète mon approche du développement : rigueur technique, communication claire et solutions orientées résultat."
-      :ui="{
+    <UPageSection id="temoignages" :title="$t('home.testimonials.title')" :headline="$t('home.testimonials.subtitle')"
+      :description="$t('home.testimonials.description')" :ui="{
         title: 'text-left sm:text-center text-4xl',
         description: 'text-left sm:text-center',
         headline: 'justify-start sm:justify-center',

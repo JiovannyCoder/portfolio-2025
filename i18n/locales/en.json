@@ -1,0 +1,165 @@
+{
+  "navigation": {
+    "links": {
+      "home": "Home",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experiences": "Experiences",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Clean code. Reliable solutions. Continuous improvement.",
+      "subtitle": "My approach",
+      "description": "Fullstack developer specialized in Laravel, Vue.js and Nuxt, I combine curiosity and rigor to turn ideas into robust and intuitive applications. I enjoy exploring new solutions, optimizing code, and creating web experiences that last over time.",
+      "links": {
+        "contact": "Contact Me",
+        "projects": "My Projects"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "subtitle": "What I master",
+      "description": "A set of technical and methodological skills that allow me to build reliable, maintainable applications designed to scale.",
+      "items": {
+        "backend": {
+          "title": "Backend",
+          "description": "Development of robust APIs with Laravel, Eloquent, and Sanctum, focusing on clean and sustainable business logic."
+        },
+        "frontend": {
+          "title": "Frontend",
+          "description": "Building reactive and scalable interfaces with Vue.js, Nuxt.js, the Composition API, and Vue Query."
+        },
+        "design": {
+          "title": "UI & Design",
+          "description": "Creating consistent interfaces using Vuetify, Nuxt UI, Material Design, with a constant focus on visual coherence."
+        },
+        "architecture": {
+          "title": "Architecture & Patterns",
+          "description": "Structuring clear and scalable applications using feature-based architecture, REST workflows, and well-managed domain states."
+        },
+        "database": {
+          "title": "Database",
+          "description": "Reliable data modeling and optimization using MySQL, migrations, factories, and complex relationships."
+        },
+        "tools": {
+          "title": "Tools & Workflow",
+          "description": "A solid development environment with Git, GitHub, CI/CD, testing, and continuous optimization tools."
+        }
+      }
+    },
+    "experiences": {
+      "title": "Experiences",
+      "subtitle": "My journey",
+      "description": "Through my experiences, I have contributed to the design and development of complete web applications, working on real-world challenges: software architecture, performance, data management, and user experience."
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "subtitle": "They trusted me",
+      "description": "Feedback from people I had the opportunity to collaborate with on various projects. Their experience reflects my approach to development: technical rigor, clear communication, and result-oriented solutions."
+    }
+  },
+  "projects": {
+    "title": "Completed Projects",
+    "subtitle": "What I built",
+    "description": "A collection of concrete solutions where I applied my technical rigor and focus on simplicity. Each project reflects how I approach challenges: understanding needs, structuring logic cleanly, and delivering intuitive and reliable interfaces.",
+    "items": {
+      "accordion": {
+        "title": {
+          "problem": "Problem statement",
+          "solution": "Proposed solution"
+        }
+      },
+      "actions": {
+        "more": "See more"
+      }
+    },
+    "single": {
+      "navigation": {
+        "breadcrumbs": {
+          "title": "Projects"
+        },
+        "links": {
+          "project": "Project link"
+        }
+      },
+      "sections": {
+        "context": {
+          "title": "Context"
+        },
+        "problem": {
+          "title": "Problem"
+        },
+        "solution": {
+          "title": "Proposed solution"
+        },
+        "architecture": {
+          "title": "Architecture",
+          "stack": {
+            "title": "Technologies used"
+          },
+          "explanation": {
+            "title": "Overview"
+          }
+        },
+        "result": {
+          "title": "Result"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Have a project in mind? — Let’s talk",
+    "description": "Effective design doesn’t just attract: it converts. A strong user experience turns interest into lasting engagement.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "validation": {
+          "required": "Please enter your name",
+          "min": "The name must contain at least :min characters"
+        }
+      },
+      "email": {
+        "label": "Email",
+        "validation": {
+          "required": "Please enter your email",
+          "email": "The email must be valid"
+        }
+      },
+      "service": {
+        "label": "Service",
+        "validation": {
+          "required": "Please select a service"
+        },
+        "options": {
+          "simple_websites": "Showcase Websites & Landing Pages",
+          "e_commerce": "Small E-commerce",
+          "custom_websites": "Custom Web Applications",
+          "dashboards": "Dashboards & Analytics"
+        }
+      },
+      "description": {
+        "label": "Description",
+        "validation": {
+          "required": "Please provide a brief description of your idea",
+          "min": "The description must contain at least :min characters"
+        }
+      },
+      "actions": {
+        "send": {
+          "label": "Send"
+        }
+      }
+    },
+    "alerts": {
+      "success": {
+        "title": "Message sent!",
+        "description": "Your message has been sent successfully! We will get back to you soon."
+      }
+    }
+  },
+  "footer": {
+    "title": "Created by Haritina Jiovanny"
+  }
+}

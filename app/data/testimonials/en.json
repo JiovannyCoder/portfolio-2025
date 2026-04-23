@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Mahery",
+    "role": "General Manager",
+    "company": "Raph & Co",
+    "content": "What I especially appreciate about him is his ability to quickly understand business needs and propose concrete solutions. You can entrust him with a project knowing it will be handled seriously and with great rigor."
+  },
+  {
+    "id": 2,
+    "name": "Rakotonirina Eric Niaina",
+    "role": "Senior Developer",
+    "company": "Raph & Co",
+    "content": "You immediately notice a real developer mindset. Curious, committed, and always ready to improve a solution or an architecture. It’s a pleasure to work with someone who genuinely wants to understand what they do."
+  },
+  {
+    "id": 3,
+    "name": "Hanitra",
+    "role": "Chief Information Officer",
+    "company": "Ministry of Interior and Decentralization",
+    "content": "I have seen his ability to analyze a technical problem and propose structured solutions. He remains attentive to needs while maintaining a very methodical approach in his work."
+  },
+  {
+    "id": 4,
+    "name": "Lovatiana Josian",
+    "role": "Community Manager & Designer",
+    "company": "Raph & Co",
+    "content": "Working with him is very easy. When I propose a design or an interface idea, he quickly understands the intention and always finds a clean way to implement it."
+  },
+  {
+    "id": 5,
+    "name": "Domohina",
+    "role": "Information Systems Manager",
+    "company": "CENAM",
+    "content": "I have always seen him persevere in everything he undertakes. In development as in other areas, he approaches things seriously and takes the time to fully solve problems to find real solutions."
+  }
+]

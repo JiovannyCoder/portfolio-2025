@@ -1,0 +1,19 @@
+{
+  "name": "Haritech Agency",
+  "context": "Haritech Agency is a platform designed for a digital agency specialized in web and mobile development.\n\nThe goal was to create an interactive showcase website allowing the agency to present its services, projects, and facilitate contact with new clients.\n\nThe project reflects the agency’s identity and serves as an entry point to its digital ecosystem.",
+  "problem": "Before this project, the agency did not have a clear and modern digital presence.\n\nPotential clients struggled to quickly understand the services offered or see completed projects.\n\nThis limited the agency’s ability to attract new clients and demonstrate its expertise in the market.",
+  "solution": "The Haritech Agency platform presents the agency, its services, and its projects in a clear and engaging way.\n\nVisitors can explore different offerings, view concrete case studies, and easily get in touch with the team.\n\nThe interface emphasizes user experience and reflects the quality and professionalism of the agency.",
+  "architecture": {
+    "stacks": ["Laravel", "Vue.js", "Vuetify", "MySQL", "REST API"],
+    "structure": "The Laravel backend manages dynamic content, agency projects, and contact requests.\n\nThe Vue.js frontend with Vuetify provides a modern, responsive, and interactive interface.\n\nThe modular architecture allows easy addition of new sections or projects in the future."
+  },
+  "technicalChallenges": [
+    "Designing an attractive and responsive interface that reflects the agency’s identity.",
+    "Implementing a flexible content management system for projects and services.",
+    "Optimizing navigation so visitors can quickly find the information they need.",
+    "Ensuring the platform can easily evolve to integrate new features or sections."
+  ],
+  "result": "Haritech Agency now has a modern and professional digital presence.\n\nThe platform centralizes the presentation of services and projects, making it easier to connect with new clients.\n\nIt highlights the agency’s expertise while providing a smooth and intuitive user experience.",
+  "image": "/images/projects/haritech-agency.png",
+  "link": "https://haritechagency.com/"
+}
