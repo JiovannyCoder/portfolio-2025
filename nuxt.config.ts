@@ -25,12 +25,12 @@ export default defineNuxtConfig({
     types: 'composition',
   },
   nitro: {
-    storage: {
-      projectsData: {
-        driver: 'fs',
-        base: './server/assets/data/projects',
+    serverAssets: [
+      {
+        baseName: 'projects',
+        dir: 'assets/data/projects',
       },
-    },
+    ],
   },
   runtimeConfig: {
     googleFormUrl: '',

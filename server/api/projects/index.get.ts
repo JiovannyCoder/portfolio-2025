@@ -1,7 +1,7 @@
 export default defineEventHandler(async (event) => {
   const { lang = 'fr' } = getQuery(event)
 
-  const storage = useStorage('projectsData')
+  const storage = useStorage('assets:projects')
 
   const storageKey = `${lang}/index.json`
 

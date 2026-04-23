@@ -2,7 +2,7 @@ export default defineEventHandler(async (event) => {
   const slug = getRouterParam(event, 'slug')
   const { lang = 'fr' } = getQuery(event)
 
-  const storage = useStorage('projectsData')
+  const storage = useStorage('assets:projects')
 
   const storageKey = `${lang}/${slug}.json`
 
