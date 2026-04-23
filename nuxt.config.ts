@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     storage: {
       projectsData: {
         driver: 'fs',
-        base: './app/data/projects',
+        base: './server/assets/data/projects',
       },
     },
   },
