@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/ui',
     '@nuxtjs/i18n',
+    'nuxt-gtag',
   ],
   css: ['~/assets/css/main.css'],
   i18n: {
@@ -39,5 +40,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     googleFormUrl: '',
+  },
+
+  gtag: {
+    id: "G-L9HTMHNS12",
   },
 })
